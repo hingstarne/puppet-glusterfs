@@ -18,6 +18,7 @@ class glusterfs::server (
   $peers = []
 ) {
 
+
   # Main package and service it provides
   package { 'glusterfs-server': ensure => installed }
   service { 'glusterfs-server':
